@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+    <header class="">
+        <h1>Calculadora</h1>
+    </header>
+</head>
+<body class="container">
+    <div class=" row">
+        <div class="col-4 col-md-4 col-lg-2">
+            <H2>Instruções</H2>
+            <P>* Clique nos números que quer utilizar</P>
+            <p>* clique na operação que quer utilizar</p>
+            <p>* clique em igual para finalizar a operação</p>
+        </div>
+        <div class="calculadora col-6 col-md-6 col-lg-8">
+            <input type="text" id="tela" readonly>
+            <div class="buttons">
+                <button onclick="adicionarNaTela(7)" >7</button>
+                <button onclick="adicionarNaTela(8)">8</button>
+                <button onclick="adicionarNaTela(9)">9</button>
+                <button onclick="operacao(4)">/</button>
+                <button onclick="adicionarNaTela(4)">4</button>
+                <button onclick="adicionarNaTela(5)">5</button>
+                <button onclick="adicionarNaTela(6)">6</button>
+                <button onclick="operacao(3)">*</button>
+                <button onclick="adicionarNaTela(1)">1</button>
+                <button onclick="adicionarNaTela(2)">2</button>
+                <button onclick="adicionarNaTela(3)">3</button>
+                <button onclick="operacao(2)">-</button>
+                <button onclick="limpa()">C</button>
+                <button onclick="adicionarNaTela(0)">0</button>
+                <button onclick="adicionarNaTela('.')">.</button>
+                <button onclick="operacao(1)">+</button>
+                <button onclick="igual()"id="igual">=</button>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
